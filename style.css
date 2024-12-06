@@ -1,0 +1,178 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+.body {
+ background-color: #ff0000;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #cccccc;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.recipe-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recipe-list li {
+    margin-bottom: 10px;
+    background: #ffffff;
+    padding: 10px;
+    border: #dddddd 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.recipe-list a {
+    text-decoration: none;
+    color: #00698f;
+}
+
+.recipe-list a:hover {
+    color: #003d82;
+}
+
+/* Recipe Page Styles */
+
+article {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+article img {
+	margin:16px!important;
+    width: 90%;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+	
+}
+
+
+.ingredients table {
+   font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.ingredients th, .ingredients td {
+    border: 1px solid #dddddd;
+   text-align: left;
+    padding: 8px;
+}
+
+.ingredients th {
+    background-color: #f0f0f0;
+}
+.ingredients tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* Search Page Styles */
+
+.search-bar {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-bar input[type="text"] {
+    width: calc(100% - 60px);
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.search-bar button {
+    width: 60px;
+    height: 40px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    float: left;
+}
+
+.search-bar button:hover {
+    background: #0056b3;
+}
+
+#searchResults {
+    clear: both;
+    padding-top: 20px;
+}
+
+#searchResults ul {
+    list-style: none;
+    padding: 0;
+}
+
+#searchResults li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#searchResults li:last-child {
+    border-bottom: none;
+}
+
+#searchResults a {
+    text-decoration: none;
+    color: #00698f;
+}
+
+#searchResults a:hover {
+    color: #003d82;
+}
